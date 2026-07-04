@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #FFFFFF;
@@ -12,28 +14,14 @@
   --africa-green: #4CAF50;
   --text-dark: #1A1A1A;
   --text-muted: #4A3728;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-accent: var(--accent);
-  --color-accent2: var(--accent2);
-  --color-background-warm: var(--background-warm);
-  --color-background-light: var(--background-light);
-  --color-africa-green: var(--africa-green);
-  --color-text-dark: var(--text-dark);
-  --color-text-muted: var(--text-muted);
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
-  --font-heading: var(--font-montserrat), ui-sans-serif, system-ui;
+  --font-inter: ui-sans-serif, system-ui;
+  --font-montserrat: ui-sans-serif, system-ui;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-inter), ui-sans-serif, system-ui;
 }
 
 @layer base {
